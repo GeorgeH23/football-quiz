@@ -44,3 +44,8 @@ body {
   font-weight: bold;
   box-shadow: 0 0.09em 0.1em rgba(59, 57, 57, 0.7);
 }
+
+#start-button:hover {
+    background-color: #00529F;
+    color: beige;
+}
