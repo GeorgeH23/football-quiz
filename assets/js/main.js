@@ -7,10 +7,20 @@ const usernameSubmit = document.getElementById('username-submit');
 let username = '';
 
 startButton.addEventListener('click', showUsernameModal);
+usernameSubmit.addEventListener('click', handleUsernameSubmit);
 
 // Show username modal when start button is clicked
 function showUsernameModal() {
     startButton.classList.add('hide');
     title.classList.add('hide');
     usernameModal.style.display = 'block';
+}
+
+// Handle username submission
+function handleUsernameSubmit() {
+    username = usernameInput.value.trim();
+    if (username !== '') {
+      usernameModal.style.display = 'none';
+      categoryList.classList.remove('hide');
+    }
 }
