@@ -24,3 +24,14 @@ function handleUsernameSubmit() {
       categoryList.classList.remove('hide');
     }
 }
+
+function validateUsername() {
+    var usernameInput = document.getElementById("username-input");
+    var errorMessage = document.getElementById("error-message");
+  
+    if (usernameInput.value === "") {
+      errorMessage.classList.remove("hide");
+    } else {
+      errorMessage.classList.add("hide");
+    }
+}
