@@ -16,6 +16,15 @@
             F<i class="fa fa-futbol" id="game-section-i"></i><i class="fa fa-futbol" id="game-section-i"></i>TBALL QUIZ
         </h1>
         <button id="start-button">Start</button>
+
+        <div id="username-modal" class="modal animate-zoom">
+            <div class="modal-content">
+                <h2>Enter Your Name</h2>
+                <p id="error-message" class="error-message hide">Please enter your name.</p>
+                <input type="text" id="username-input">
+                <button id="username-submit" onclick="validateUsername()">Submit</button>
+            </div>
+        </div>
     </div>
     <script src="assets/js/main.js"></script>
 </body>
