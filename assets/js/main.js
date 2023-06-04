@@ -467,4 +467,30 @@ function showCategories() {
     startButton.classList.add('hide');
     title.classList.add('hide');
     categoryList.classList.remove('hide');
-  }
+}
+
+// Start the quiz for the selected category
+function startQuiz(categoryIndex) {
+    categoryList.classList.add('hide');
+    questionContainer.classList.remove('hide');
+    currentCategoryIndex = categoryIndex;
+    currentQuestionIndex = 0;
+    const category = quizData[currentCategoryIndex];
+    category.questions = selectedQuestions;
+    displayQuestion();
+}
+
+// Display the current question
+function displayQuestion() {
+    const category = quizData[currentCategoryIndex];
+    const question = category.questions[currentQuestionIndex];
+    questionText.textContent = question.question;
+    optionsContainer.innerHTML = '';
+  
+    question.options.forEach((option) => {
+      const answerElement = document.createElement('div');
+      answerElement.textContent = option;
+      answerElement.classList.add('answer');
+      optionsContainer.appendChild(answerElement);
+    });
+}
