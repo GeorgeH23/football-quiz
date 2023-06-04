@@ -3,6 +3,7 @@ const startButton = document.getElementById('start-button');
 const usernameModal = document.getElementById('username-modal');
 const usernameInput = document.getElementById('username-input');
 const usernameSubmit = document.getElementById('username-submit');
+const categoryList = document.getElementById('category-list');
 
 let username = '';
 
@@ -35,3 +36,10 @@ function validateUsername() {
       errorMessage.classList.add("hide");
     }
 }
+
+// Show category selection when name is submitted
+function showCategories() {
+    startButton.classList.add('hide');
+    title.classList.add('hide');
+    categoryList.classList.remove('hide');
+  }
