@@ -485,6 +485,14 @@ function startQuiz(categoryIndex) {
     displayQuestion();
 }
 
+// Event listener for category items
+const categoryItems = document.getElementsByClassName('category-item');
+Array.from(categoryItems).forEach((item, index) => {
+  item.addEventListener('click', () => {
+    startQuiz(index);
+  });
+});
+
 // Helper function to shuffle an array using Fisher-Yates algorithm
 // https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
 function shuffleArray(array) {
