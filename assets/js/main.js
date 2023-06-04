@@ -517,7 +517,7 @@ function displayQuestion() {
       answerElement.textContent = option;
       answerElement.classList.add('answer');
       answerElement.addEventListener('click', () => {
-        checkAnswer(answerElement, option, question.correctAnswer);
+        checkAnswer(answerElement, option, question.answer);
       });
       optionsContainer.appendChild(answerElement);
     });
@@ -526,15 +526,15 @@ function displayQuestion() {
 }
 
 // Check the selected answer
-function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
-    if (selectedAnswer === correctAnswer) {
+function checkAnswer(answerElement, selectedAnswer, answer) {
+    if (selectedAnswer === answer) {
       answerElement.classList.add('correct');
       score++;
     } else {
       answerElement.classList.add('wrong');
       const options = optionsContainer.getElementsByClassName('answer');
       Array.from(options).forEach((option) => {
-        if (option.textContent === correctAnswer) {
+        if (option.textContent === answer) {
           option.classList.add('correct');
         }
       });
