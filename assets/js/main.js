@@ -4,8 +4,14 @@ const usernameModal = document.getElementById('username-modal');
 const usernameInput = document.getElementById('username-input');
 const usernameSubmit = document.getElementById('username-submit');
 const categoryList = document.getElementById('category-list');
+const questionContainer = document.getElementById('question-container');
+const questionText = document.getElementById('question');
+const optionsContainer = document.getElementById('options');
+const nextButton = document.getElementById('next-button');
 
 let username = '';
+let currentCategoryIndex = -1; // Track the current category index
+let currentQuestionIndex = 0;
 
 startButton.addEventListener('click', showUsernameModal);
 usernameSubmit.addEventListener('click', handleUsernameSubmit);
