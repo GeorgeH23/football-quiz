@@ -141,3 +141,26 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
         transform: scale(1)
     }
 }
+
+/* --------------------------------------CATEGORY LIST-------------------------------------- */
+.category-list-h2 {
+    font-family: 'Trump Town Pro', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 7em;
+    font-weight: bold;
+    text-shadow: 0.04em 0.04em #EE324E;
+    margin-bottom: 0.5em;
+}
+
+.category-item {
+    cursor: pointer;
+    list-style: none;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+  
+.category-item:hover {
+    color: blue;
+    font-weight: bold;
+}
