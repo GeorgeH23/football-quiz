@@ -538,6 +538,7 @@ function showNextButton() {
     nextButton.classList.remove('hide');
     nextButton.onclick = function() {
       showNextQuestion();
+      resetAnswerStyles();
     };
 }
 
@@ -546,5 +547,15 @@ function showNextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < quizData[currentCategoryIndex].questions.length) {
       displayQuestion();
+      resetAnswerStyles();
     }
+}
+
+// Reset answer styles for the next question
+function resetAnswerStyles() {
+    const options = optionsContainer.getElementsByClassName('answer');
+    Array.from(options).forEach((option) => {
+      option.className = 'answer';
+      option.style.pointerEvents = 'auto';
+    });
 }
