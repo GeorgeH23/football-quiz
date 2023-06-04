@@ -8,6 +8,8 @@ const questionContainer = document.getElementById('question-container');
 const questionText = document.getElementById('question');
 const optionsContainer = document.getElementById('options');
 const nextButton = document.getElementById('next-button');
+const scoreContainer = document.getElementById('score-container');
+const scoreDisplay = document.getElementById('score');
 
 let username = '';
 let currentCategoryIndex = -1; // Track the current category index
