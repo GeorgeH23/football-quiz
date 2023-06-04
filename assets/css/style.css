@@ -112,6 +112,18 @@ input[type="text"] {
     color: beige;
 }
 
+.error-message {
+    color: beige;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-shadow: 0.09em 0.09em #EE324E;
+}
+
+.hide {
+    display: none;
+}
+
 /* Copied "animatezoom" animation from:
 https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
 .animate-zoom {
