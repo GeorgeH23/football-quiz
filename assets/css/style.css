@@ -86,3 +86,11 @@ body {
     font-size: 4em;
     margin-bottom: 0.5em;
 }
+
+input[type="text"] {
+    padding: 0.6em;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.3em;
+}
