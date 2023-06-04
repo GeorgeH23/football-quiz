@@ -10,6 +10,7 @@ const optionsContainer = document.getElementById('options');
 const nextButton = document.getElementById('next-button');
 const scoreContainer = document.getElementById('score-container');
 const scoreDisplay = document.getElementById('score');
+const encouragement = document.getElementById('encouragement-message');
 
 let username = '';
 let currentCategoryIndex = -1; // Track the current category index
@@ -483,7 +484,7 @@ function startQuiz(categoryIndex) {
     const category = Object.assign({},quizData[currentCategoryIndex]);
     const allQuestions = category.questions;
     const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
-    selectedCategoryQuestions = shuffledQuestions.slice(0, 4); // Select the first four questions
+    selectedCategoryQuestions = shuffledQuestions.slice(0, 2); // Select the first four questions
     displayQuestion();
 }
 
@@ -522,6 +523,7 @@ function displayQuestion() {
     });
 
     nextButton.classList.add('hide');
+    encouragement.classList.add('hide');
 }
 
 // Check the selected answer
@@ -529,6 +531,7 @@ function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
     if (selectedAnswer === correctAnswer) {
       answerElement.classList.add('correct');
       score++;
+      showEncouragementMessage(true);
     } else {
       answerElement.classList.add('wrong');
       const options = optionsContainer.getElementsByClassName('answer');
@@ -537,10 +540,27 @@ function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
           option.classList.add('correct');
         }
       });
+      showEncouragementMessage(false);
     }
 
     disableAnswerSelection();
     showNextButton();
+}
+
+function showEncouragementMessage(isCorrect) {
+    const messageContainer = document.getElementById('encouragement-message');
+  
+    if (isCorrect) {
+      messageContainer.textContent = "Great job! Your answer is correct.";
+      messageContainer.classList.add('correct-message');
+      messageContainer.classList.remove('wrong-message');
+    } else {
+      messageContainer.textContent = "Oops! Your answer is incorrect.";
+      messageContainer.classList.add('wrong-message');
+      messageContainer.classList.remove('correct-message');
+    }
+  
+    messageContainer.classList.remove('hide');
 }
 
 // Show next button after an answer is clicked
@@ -549,6 +569,7 @@ function showNextButton() {
     nextButton.onclick = function() {
       showNextQuestion();
       resetAnswerStyles();
+      encouragement.classList.add('hide');
     };
 }
 

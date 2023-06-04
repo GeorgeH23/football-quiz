@@ -210,3 +210,8 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
     margin-top: 1.5em;
     box-shadow: 0 0.09em 0.1em rgba(59, 57, 57, 0.7);
 }
+
+#encouragement-message {
+    font-size: 1em;
+    color: beige;
+}
