@@ -164,3 +164,27 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
     color: blue;
     font-weight: bold;
 }
+
+#question-container {
+    text-align: center;
+}
+  
+#question {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+#next-button {
+    font-size: 1em;
+    padding: 0.5em 1.8em;
+    border-radius: 0.2em;
+    letter-spacing: 0.08em;
+    background-color: #00529F;
+    color: beige;
+    font-weight: bold;
+    margin-top: 1.5em;
+    box-shadow: 0 0.09em 0.1em rgba(59, 57, 57, 0.7);
+}
