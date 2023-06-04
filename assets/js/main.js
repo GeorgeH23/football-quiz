@@ -493,6 +493,8 @@ function displayQuestion() {
       answerElement.classList.add('answer');
       optionsContainer.appendChild(answerElement);
     });
+
+    nextButton.classList.add('hide');
 }
 
 // Check the selected answer
@@ -508,4 +510,14 @@ function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
         }
       });
     }
+
+    showNextButton();
+}
+
+// Show next button after an answer is clicked
+function showNextButton() {
+    nextButton.classList.remove('hide');
+    nextButton.onclick = function() {
+      showNextQuestion();
+    };
 }
