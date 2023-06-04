@@ -12,6 +12,7 @@ const nextButton = document.getElementById('next-button');
 let username = '';
 let currentCategoryIndex = -1; // Track the current category index
 let currentQuestionIndex = 0;
+let score = 0;
 
 const quizData = [
     {
@@ -475,7 +476,9 @@ function startQuiz(categoryIndex) {
     questionContainer.classList.remove('hide');
     currentCategoryIndex = categoryIndex;
     currentQuestionIndex = 0;
+    score = 0;
     const category = quizData[currentCategoryIndex];
+    const allQuestions = category.questions;
     const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
     const selectedQuestions = shuffledQuestions.slice(0, 4); // Select the first four questions
     category.questions = selectedQuestions;
@@ -516,6 +519,7 @@ function displayQuestion() {
 function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
     if (selectedAnswer === correctAnswer) {
       answerElement.classList.add('correct');
+      score++;
     } else {
       answerElement.classList.add('wrong');
       const options = optionsContainer.getElementsByClassName('answer');
