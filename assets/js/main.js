@@ -476,8 +476,20 @@ function startQuiz(categoryIndex) {
     currentCategoryIndex = categoryIndex;
     currentQuestionIndex = 0;
     const category = quizData[currentCategoryIndex];
+    const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
+    const selectedQuestions = shuffledQuestions.slice(0, 4); // Select the first four questions
     category.questions = selectedQuestions;
     displayQuestion();
+}
+
+// Helper function to shuffle an array using Fisher-Yates algorithm
+// https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 // Display the current question
