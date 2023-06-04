@@ -28,7 +28,7 @@ const quizData = [
                "Bayern Munich",
                "Real Madrid"
             ],
-            answer:"Liverpool"
+            correctAnswer:"Liverpool"
         },
         {
             question:"Which club has won the most English Premier League titles?",
@@ -38,7 +38,7 @@ const quizData = [
                "Chelsea",
                "Manchester City"
             ],
-            "answer":"Manchester United"
+            correctAnswer:"Manchester United"
         },
         {
             question:"Which club is known as \"The Invincibles\"?",
@@ -48,7 +48,7 @@ const quizData = [
                "Arsenal",
                "Manchester City"
             ],
-            "answer":"Arsenal"
+            correctAnswer:"Arsenal"
         },
         {
             question:"Which club is known as \"The Blues\"?",
@@ -58,7 +58,7 @@ const quizData = [
                "Chelsea",
                "Manchester City"
             ],
-            "answer":"Chelsea"
+            correctAnswer:"Chelsea"
         },
         {
             question:"Which club has won the most UEFA Europa League titles?",
@@ -68,7 +68,7 @@ const quizData = [
                "Chelsea",
                "Manchester United"
             ],
-            "answer":"Sevilla"
+            correctAnswer:"Sevilla"
         },
         {
             question:"Which club has won the most Scottish Premiership titles?",
@@ -78,7 +78,7 @@ const quizData = [
                "Aberdeen",
                "Celtic"
             ],
-            "answer":"Celtic"
+            correctAnswer:"Celtic"
         },
         {
             question:"Which club has won the most Primeira Liga titles in Portugal?",
@@ -88,7 +88,7 @@ const quizData = [
                "Sporting Lisbon",
                "Braga"
             ],
-            "answer":"Benfica"
+            correctAnswer:"Benfica"
         },
         {
             question:"Which club is known as \"The Reds\"?",
@@ -98,7 +98,7 @@ const quizData = [
                "Manchester United",
                "AC Milan"
             ],
-            "answer":"Liverpool"
+            correctAnswer:"Liverpool"
         },
         {
             question:"Which club is known as \"The Bavarians\"?",
@@ -108,7 +108,7 @@ const quizData = [
                "Schalke 04",
                "Stuttgart"
             ],
-            "answer":"Bayern Munich"
+            correctAnswer:"Bayern Munich"
         },
         {
             question:"Which club is known as \"The Nerazzurri\"?",
@@ -118,7 +118,7 @@ const quizData = [
                "AC Milan",
                "Juventus"
             ],
-            "answer":"Inter Milan"
+            correctAnswer:"Inter Milan"
         },
         {
             question:"Which club has won the most FIFA Club World Cup titles?",
@@ -128,7 +128,7 @@ const quizData = [
                "Bayern Munich",
                "Milan"
             ],
-            "answer":"Real Madrid"
+            correctAnswer:"Real Madrid"
         },
         {
             question:"Which club is known as \"The King of Europe\"?",
@@ -138,7 +138,7 @@ const quizData = [
                "Boca Juniors",
                "Real Madrid"
             ],
-            "answer":"Real Madrid"
+            correctAnswer:"Real Madrid"
         },
         {
             question:"Which club is known as \"The Yellow Submarine\"?",
@@ -148,7 +148,7 @@ const quizData = [
                "Villareal",
                "Borussia Dortmund"
             ],
-            "answer":"Villarreal"
+            correctAnswer:"Villarreal"
         },
         {
             question:"Which club is known as \"The Millionaires\"?",
@@ -158,7 +158,7 @@ const quizData = [
                "Palmeiras",
                "Nacional"
             ],
-            "answer":"River Plate"
+            correctAnswer:"River Plate"
         }
       ]
     },
@@ -173,7 +173,7 @@ const quizData = [
                "Brazil",
                "Argentina"
             ],
-            answer:"Brazil"
+            correctAnswer:"Brazil"
         },
         {
             question:"Which national club has won the most UEFA European Championship titles?",
@@ -183,7 +183,7 @@ const quizData = [
                "France",
                "Italy"
             ],
-            answer:"Germany"
+            correctAnswer:"Germany"
         },
         {
             question:"Which national club has won the most Copa America titles?",
@@ -193,7 +193,7 @@ const quizData = [
                "Uruguay",
                "Chile"
             ],
-            answer:"Argentina"
+            correctAnswer:"Argentina"
         },
         {
             question:"Which national club has won the most AFC Asian Cup titles?",
@@ -203,7 +203,7 @@ const quizData = [
                "Saudi Arabia",
                "Iran"
             ],
-            answer:"Japan"
+            correctAnswer:"Japan"
         },
         {
             question:"Which national club is known as \"The Red Fury\"?",
@@ -213,7 +213,7 @@ const quizData = [
                "England",
                "Portugal"
             ],
-            answer:"Spain"
+            correctAnswer:"Spain"
         },
         {
             question:"Which national club has won the most CAF Africa Cup of Nations titles?",
@@ -223,7 +223,7 @@ const quizData = [
                "Egypt",
                "Nigeria"
             ],
-            answer:"Egypt"
+            correctAnswer:"Egypt"
         },
         {
             question:"Which national club is known as \"The Three Lions\"?",
@@ -233,7 +233,7 @@ const quizData = [
                "Netherlands",
                "Belgium"
             ],
-            answer:"England"
+            correctAnswer:"England"
         },
         {
             question:"Which national club has won the most CONCACAF Gold Cup titles?",
@@ -243,7 +243,7 @@ const quizData = [
                "Costa Rica",
                "Canada"
             ],
-            answer:"Mexico"
+            correctAnswer:"Mexico"
         },
         {
             question:"Which national club is known as \"The Samba Boys\"?",
@@ -253,7 +253,7 @@ const quizData = [
                "Colombia",
                "Uruguay"
             ],
-            answer:"Brazil"
+            correctAnswer:"Brazil"
         },
         {
             question:"Which national club has won the most OFC Nations Cup titles?",
@@ -263,7 +263,7 @@ const quizData = [
                "Fiji",
                "Tahiti"
             ],
-            answer:"New Zealand"
+            correctAnswer:"New Zealand"
         }
       ]
     },
@@ -278,7 +278,7 @@ const quizData = [
                "Ali Daei",
                "Pelé"
             ],
-            answer:"Pelé"
+            correctAnswer:"Pelé"
             
         },
         {
@@ -289,7 +289,7 @@ const quizData = [
                "Michel Platini",
                "Johann Cruyff"
             ],
-            answer:"Michel Platini"
+            correctAnswer:"Michel Platini"
         },
         {
             question:"Who is the all-time leading goalscorer in club football?",
@@ -299,7 +299,7 @@ const quizData = [
                "Cristiano Ronaldo",
                "Ferenc Puskas"
             ],
-            answer:"Pele"
+            correctAnswer:"Pele"
         },
         {
             question:"Which player has won the most UEFA Champions League titles?",
@@ -309,7 +309,7 @@ const quizData = [
                "Paolo Maldini",
                "Francisco Gento"
             ],
-            answer:"Francisco Gento"
+            correctAnswer:"Francisco Gento"
         },
         {
             question:"Who is the all-time leading goalscorer in World Cup history?",
@@ -319,7 +319,7 @@ const quizData = [
                "Gerd Muller",
                "Pelé"
             ],
-            answer:"Gerd Muller"
+            correctAnswer:"Gerd Muller"
         },
         {
             question:"Which player has won the most European Golden Shoe awards?",
@@ -329,7 +329,7 @@ const quizData = [
                "Gerd Muller",
                "Thierry Henry"
             ],
-            answer:"Thierry Henry"
+            correctAnswer:"Thierry Henry"
         },
         {
             question:"Which player has won the most FIFA World Cup titles?",
@@ -339,7 +339,7 @@ const quizData = [
                "Diego Maradona",
                "Pele"
             ],
-            answer:"Pele"
+            correctAnswer:"Pele"
         },
         {
             question:"Who has scored the most hat-tricks in La Liga?",
@@ -349,7 +349,7 @@ const quizData = [
                "Telmo Zarra",
                "Hugo Sanchez"
             ],
-            answer:"Cristiano Ronaldo"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Which player has won the most UEFA European Golden Shoe awards?",
@@ -359,7 +359,7 @@ const quizData = [
                "Marco van Basten",
                "Eusébio"
             ],
-            answer:"Lionel Messi"
+            correctAnswer:"Lionel Messi"
         },
         {
             question:"Who has scored the most goals in a single UEFA Champions League season?",
@@ -369,7 +369,7 @@ const quizData = [
                "Robert Lewandowski",
                "Ruud van Nistelrooy"
             ],
-            answer:"Cristiano Ronaldo"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Who is the all-time leading goalscorer in El Clásico matches?",
@@ -379,7 +379,7 @@ const quizData = [
                "Alfredo Di Stefano",
                "Raul"
             ],
-            answer:"Lionel Messi"
+            correctAnswer:"Lionel Messi"
         },
         {
             question:"Who has scored the most goals in a single UEFA European Championship tournament?",
@@ -389,7 +389,7 @@ const quizData = [
                "Alan Shearer",
                "Fernando Torres"
             ],
-            answer:"Michel Platini"
+            correctAnswer:"Michel Platini"
         },
         {
             question:"Who is the all-time leading goalscorer in the UEFA European Championship?",
@@ -399,7 +399,7 @@ const quizData = [
                "Thierry Henry",
                "Marco van Basten"
             ],
-            answer:"Cristiano Ronaldo"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Who has won the most European Golden Shoe awards in their career?",
@@ -409,7 +409,7 @@ const quizData = [
                "Gerd Muller",
                "Jimmy Greaves"
             ],
-            answer:"Lionel Messi"
+            correctAnswer:"Lionel Messi"
         },
         {
             question:"Who is the only player to have won the European Golden Shoe with two different clubs?",
@@ -419,7 +419,7 @@ const quizData = [
                "Lionel Messi",
                "Marco van Basten"
             ],
-            answer:"Thierry Henry"
+            correctAnswer:"Thierry Henry"
         },
         {
             question:"Who has the most assists in the history of the UEFA Champions League?",
@@ -429,7 +429,7 @@ const quizData = [
                "Ryan Giggs",
                "Andrés Iniesta"
             ],
-            answer:"Andrés Iniesta"
+            correctAnswer:"Andrés Iniesta"
         }
       ]
     }
@@ -517,7 +517,7 @@ function displayQuestion() {
       answerElement.textContent = option;
       answerElement.classList.add('answer');
       answerElement.addEventListener('click', () => {
-        checkAnswer(answerElement, option, question.answer);
+        checkAnswer(answerElement, option, question.correctAnswer);
       });
       optionsContainer.appendChild(answerElement);
     });
@@ -526,15 +526,15 @@ function displayQuestion() {
 }
 
 // Check the selected answer
-function checkAnswer(answerElement, selectedAnswer, answer) {
-    if (selectedAnswer === answer) {
+function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
       answerElement.classList.add('correct');
       score++;
     } else {
       answerElement.classList.add('wrong');
       const options = optionsContainer.getElementsByClassName('answer');
       Array.from(options).forEach((option) => {
-        if (option.textContent === answer) {
+        if (option.textContent === correctAnswer) {
           option.classList.add('correct');
         }
       });
