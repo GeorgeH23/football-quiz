@@ -557,6 +557,8 @@ function showNextQuestion() {
     if (currentQuestionIndex < quizData[currentCategoryIndex].questions.length) {
       displayQuestion();
       resetAnswerStyles();
+    } else {
+        showScore();
     }
 }
 
@@ -575,4 +577,11 @@ function disableAnswerSelection() {
     Array.from(options).forEach((option) => {
       option.style.pointerEvents = 'none';
     });
+}
+
+// Show the final score
+function showScore() {
+    questionContainer.classList.add('hide');
+    scoreContainer.classList.remove('hide');
+    scoreDisplay.textContent = `${score} / ${quizData[currentCategoryIndex].questions.length}`;
 }
