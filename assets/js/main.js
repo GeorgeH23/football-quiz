@@ -538,6 +538,7 @@ function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
       });
     }
 
+    disableAnswerSelection();
     showNextButton();
 }
 
@@ -565,5 +566,13 @@ function resetAnswerStyles() {
     Array.from(options).forEach((option) => {
       option.className = 'answer';
       option.style.pointerEvents = 'auto';
+    });
+}
+
+// After an answer is clicked, disable answer selection
+function disableAnswerSelection() {
+    const options = optionsContainer.getElementsByClassName('answer');
+    Array.from(options).forEach((option) => {
+      option.style.pointerEvents = 'none';
     });
 }
