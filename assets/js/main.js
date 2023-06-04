@@ -521,3 +521,11 @@ function showNextButton() {
       showNextQuestion();
     };
 }
+
+// Show next question or end the quiz
+function showNextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizData[currentCategoryIndex].questions.length) {
+      displayQuestion();
+    }
+}
