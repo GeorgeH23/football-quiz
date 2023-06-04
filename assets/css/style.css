@@ -111,3 +111,21 @@ input[type="text"] {
     background-color: #FEBE10;
     color: beige;
 }
+
+/* Copied "animatezoom" animation from:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
+.animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+/* Copied "animatezoom" animation from:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
