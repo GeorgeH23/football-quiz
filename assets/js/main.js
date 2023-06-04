@@ -15,6 +15,7 @@ let username = '';
 let currentCategoryIndex = -1; // Track the current category index
 let currentQuestionIndex = 0;
 let score = 0;
+let selectedCategoryQuestions = [];
 
 const quizData = [
     {
@@ -479,11 +480,10 @@ function startQuiz(categoryIndex) {
     currentCategoryIndex = categoryIndex;
     currentQuestionIndex = 0;
     score = 0;
-    const category = quizData[currentCategoryIndex];
+    const category = Object.assign({},quizData[currentCategoryIndex]);
     const allQuestions = category.questions;
     const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
-    const selectedQuestions = shuffledQuestions.slice(0, 4); // Select the first four questions
-    category.questions = selectedQuestions;
+    selectedCategoryQuestions = shuffledQuestions.slice(0, 4); // Select the first four questions
     displayQuestion();
 }
 
@@ -507,8 +507,7 @@ function shuffleArray(array) {
 
 // Display the current question
 function displayQuestion() {
-    const category = quizData[currentCategoryIndex];
-    const question = category.questions[currentQuestionIndex];
+    const question = selectedCategoryQuestions[currentQuestionIndex];
     questionText.textContent = question.question;
     optionsContainer.innerHTML = '';
   
@@ -556,7 +555,7 @@ function showNextButton() {
 // Show next question or end the quiz
 function showNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < quizData[currentCategoryIndex].questions.length) {
+    if (currentQuestionIndex < selectedCategoryQuestions.length) {
       displayQuestion();
       resetAnswerStyles();
     } else {
@@ -585,5 +584,6 @@ function disableAnswerSelection() {
 function showScore() {
     questionContainer.classList.add('hide');
     scoreContainer.classList.remove('hide');
-    scoreDisplay.textContent = `${score} / ${quizData[currentCategoryIndex].questions.length}`;
+    scoreDisplay.textContent = `${score} / ${selectedCategoryQuestions.length}`;
+    selectedCategoryQuestions = [];
 }
