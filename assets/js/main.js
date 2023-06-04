@@ -491,6 +491,9 @@ function displayQuestion() {
       const answerElement = document.createElement('div');
       answerElement.textContent = option;
       answerElement.classList.add('answer');
+      answerElement.addEventListener('click', () => {
+        checkAnswer(answerElement, option, question.correctAnswer);
+      });
       optionsContainer.appendChild(answerElement);
     });
 
