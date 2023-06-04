@@ -494,3 +494,18 @@ function displayQuestion() {
       optionsContainer.appendChild(answerElement);
     });
 }
+
+// Check the selected answer
+function checkAnswer(answerElement, selectedAnswer, correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
+      answerElement.classList.add('correct');
+    } else {
+      answerElement.classList.add('wrong');
+      const options = optionsContainer.getElementsByClassName('answer');
+      Array.from(options).forEach((option) => {
+        if (option.textContent === correctAnswer) {
+          option.classList.add('correct');
+        }
+      });
+    }
+}
