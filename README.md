@@ -32,7 +32,7 @@ Based on target audience:
     1. Primary/Accent Colors: #EE324E and #00529F;
     2. Background Color: #FEBE10;
     3. Text Color: beige/black;
-    ![Color Palette inspiration](https://teamcolorcodes.com/real-madrid-c-f-colors/#:~:text=Color%20Codes%20HEX-,Real%20Madrid%20C.F.,%2C%20and%20%23EE324E%20for%20red.)
+    - [Color Palette inspiration](https://teamcolorcodes.com/real-madrid-c-f-colors/#:~:text=Color%20Codes%20HEX-,Real%20Madrid%20C.F.,%2C%20and%20%23EE324E%20for%20red.)
 
 ![Colour Palette](documentation/colour-palette.png)
 
