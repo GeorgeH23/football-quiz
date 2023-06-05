@@ -112,11 +112,11 @@ input[type="text"] {
 }
 
 .error-message {
-    color: beige;
-    font-size: 1.5em;
+    color: black;
+    font-size: 1.7em;
     font-weight: bold;
     margin-bottom: 0.5em;
-    text-shadow: 0.09em 0.09em #EE324E;
+    text-shadow: 0.07em 0.05em #EE324E;
 }
 
 .hide {
