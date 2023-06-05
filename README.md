@@ -64,7 +64,7 @@ Based on target audience:
 
 -   __End Game section__
     - 
-      ![End](documentation/)
+      ![End](documentation/end.png)
 
 ## Issues and Bugs
 -   ### Solved
