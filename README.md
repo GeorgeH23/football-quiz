@@ -111,6 +111,11 @@ Based on target audience:
     - result for main.js 
       ![JS results](documentation/validation/js-validation.png)
 
+- [Lighthouse]
+
+    - result for inspect -> Lighthouse 
+      ![Lighthouse results](documentation/validation/lighthouse.png)
+
 ## Deployment
 
 - This project was developed using [GitPod](https://www.gitpod.io/) and [CodeAnyWhere](https://codeanywhere.com/).
