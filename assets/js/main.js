@@ -281,7 +281,7 @@ const quizData = [
                "Ali Daei",
                "Pelé"
             ],
-            correctAnswer:"Pelé"
+            correctAnswer:"Cristiano Ronaldo"
             
         },
         {
@@ -292,7 +292,7 @@ const quizData = [
                "Michel Platini",
                "Johann Cruyff"
             ],
-            correctAnswer:"Michel Platini"
+            correctAnswer:"Lionel Messi"
         },
         {
             question:"Who is the all-time leading goalscorer in club football?",
@@ -302,7 +302,7 @@ const quizData = [
                "Cristiano Ronaldo",
                "Ferenc Puskas"
             ],
-            correctAnswer:"Pele"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Which player has won the most UEFA Champions League titles?",
@@ -312,7 +312,7 @@ const quizData = [
                "Paolo Maldini",
                "Francisco Gento"
             ],
-            correctAnswer:"Francisco Gento"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Who is the all-time leading goalscorer in World Cup history?",
@@ -322,7 +322,7 @@ const quizData = [
                "Gerd Muller",
                "Pelé"
             ],
-            correctAnswer:"Gerd Muller"
+            correctAnswer:"Miroslav Klose"
         },
         {
             question:"Which player has won the most European Golden Shoe awards?",
@@ -332,7 +332,7 @@ const quizData = [
                "Gerd Muller",
                "Thierry Henry"
             ],
-            correctAnswer:"Thierry Henry"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Which player has won the most FIFA World Cup titles?",
@@ -415,14 +415,14 @@ const quizData = [
             correctAnswer:"Lionel Messi"
         },
         {
-            question:"Who is the only player to have won the European Golden Shoe with two different clubs?",
+            question:"Who is the player to have won the European Golden Shoe with two different clubs?",
             options:[
                "Thierry Henry",
                "Cristiano Ronaldo",
                "Lionel Messi",
                "Marco van Basten"
             ],
-            correctAnswer:"Thierry Henry"
+            correctAnswer:"Cristiano Ronaldo"
         },
         {
             question:"Who has the most assists in the history of the UEFA Champions League?",
