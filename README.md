@@ -14,9 +14,9 @@
 
 ## Introduction
 
-Football Quiz introduction ...
+The Football Quiz is a full challenge quiz with various questions about football including history, players, teams and memorable moments. Get ready and put your football knowledge to the test with our exciting quiz!
 
-![Football Quiz Mockup Images](documentation/quiz-mockup.png)
+![Football Quiz Mockup Images](documentation/f-quiz-mockup.png)
 
 ## User Experience (UX)
 
@@ -24,7 +24,7 @@ Football Quiz introduction ...
 Based on target audience:
 * As a football fan, I want to test my knowledge about sport and challenge myself.
 * As a football learner, I want to have an immediate feedback after answering each question.
-* As a football fan, I want the quiz to include a variety of questions based on catecories.
+* As a football fan, I want the quiz to include a variety of questions based on categories.
 * As a competitive fan, I want to see the score at the end of the quiz.
 
 ### Design
@@ -47,23 +47,29 @@ Based on target audience:
 ### Existing Features
 
 -   __Home Page__
-    - 
+    - Press the start button to enjoy the quiz.
       ![Home](documentation/home.png)
 
 -   __Modal Section__
-    - 
+    - Enter your name first, after that you are good to Go!
+    - The name is mandatory, an error will occur if you don't fill the input box.
       ![Modal](documentation/modal.png)
 
 -   __Categories section__
-    - 
+    - Each category contains several questions that will come randomly each time the test starts.
+    - Choose a category and the questions will begin.
       ![Categories](documentation/category.png)
 
 -   __Questions section__
-    - 
+    - If the answer is correct, the answer will be green.
+    - If is wrong, the answer that was chosen will be red and the correct one will be pointed with green.
+    - A message will be displayed to let you know the status of your answer.
+    - Press the next button when you are redy to go to the next question.
       ![Questions](documentation/question.png)
 
 -   __End Game section__
-    - 
+    - In the End section a message of encouragement and the final score is displayed.
+    - Press Try Again button if you want to do the quiz again.
       ![End](documentation/end.png)
 
 ## Issues and Bugs
@@ -124,7 +130,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 ## Credits 
 
 ### Content 
-- The ReadME file was inspired from [Travel Addict](https://github.com/GeorgeH23/travel-addict/blob/main/README.md) and [Love Maths](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md)
+- The ReadME file was inspired from my first project [Travel Addict](https://github.com/GeorgeH23/travel-addict/blob/main/README.md) and [Love Maths](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md)
 - All other content was written by the developer
 
 ### Code
