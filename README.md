@@ -113,7 +113,7 @@ Based on target audience:
 
 - [Lighthouse]
 
-    - result for inspect -> Lighthouse 
+    - result from inspect -> Lighthouse 
       ![Lighthouse results](documentation/validation/lighthouse.png)
 
 ## Deployment
