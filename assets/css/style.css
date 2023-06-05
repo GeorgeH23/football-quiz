@@ -79,10 +79,10 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: 34em;
-    max-height: 28em;
+    width: 55%;
+    height: 60%;
+    max-width: 55em;
+    max-height: 47em;
     padding: 1em;
     border-radius: 0.6em;
     transform: translate(-50%, -50%);
@@ -274,30 +274,207 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
 
 @media screen and (min-width: 1601px) {
     #start-button, #try-again {
+        font-size: 4.5em;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal-content h2 {
+        font-size: 9em;
+    }
+
+    input[type="text"] {
         font-size: 2.5em;
+    }
+
+    .modal-content button {
+        font-size: 3.5em;
+        margin-top: 1em;
+    }
+
+    .error-message {
+        font-size: 3em;
+    }
+
+    .category-list-h2 {
+        font-size: 9em;
+    }
+    
+    .category-item {
+        font-size: 5em;
+    }
+
+    #question {
+        font-size: 5em;
+    }
+    
+    .answer {
+        font-size: 3em;
+    }
+
+    #next-button {
+        font-size: 3em;
+    }
+    
+    #encouragement-message {
+        font-size: 2.5em;
+    }
+
+    #end-game-header {
+        font-size: 9em;
+    }
+
+    .game-info {
+        font-size: 3em;
+    }
+
+    #user-message {
+        font-size: 1.5em;
+    }
+
+    #final-score {
+        font-size: 5em;
+    }
+
+    #trophy-h1 {
+        font-size: 20em;
+        margin-bottom: 0em;
     }
 }
 @media screen and (min-width: 1280px) and (max-width: 1600px) {
-    #start-button, #try-again {
+    .modal-content {
+        width: 50%;
+        height: 55%;
+    }
+
+    .modal-content h2 {
+        font-size: 6.2em;
+    }
+
+    .modal-content button {
+        margin-top: 1em;
+    }
+
+    #next-button {
+        font-size: 1.5em;
+    }
+    
+    #encouragement-message {
         font-size: 2em;
     }
+
+    .game-info {
+        font-size: 2.5em;
+    }
+
+    #user-message {
+        font-size: 1.5em;
+    }
+
+    #final-score {
+        font-size: 4em;
+    }
+
+    #trophy-h1 {
+        font-size: 20em;
+        margin-bottom: 0em;
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 770px) and (max-width: 1279px) {
     #game-section-h1 {
         font-size: 6.5em;
     }
+
+    #start-button, #try-again {
+        font-size: 2em;
+    }
+
+    #end-game-header {
+        font-size: 6em;
+    }
+
+    #trophy-h1 {
+        margin-bottom: 0em;
+    }
+
+    #final-score {
+        margin-bottom: 0em;
+    }
+
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 769px) {
     #game-section-h1 {
         font-size: 3.5em;
     }
-}
-@media screen and (max-width: 319px) {
-    #game-section-h1 {
-        font-size: 1.8em;
-    }
 
     #start-button, #try-again {
+        font-size: 2em;
+    }
+
+    .modal-content {
+        width: 72%;
+        height: 35%;
+    }
+
+    .modal-content h2 {
+        font-size: 2em;
+    }
+
+    input[type="text"] {
         font-size: 1em;
     }
+
+    .modal-content button {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .error-message {
+        font-size: 1em;
+    }
+
+    .category-list-h2 {
+        font-size: 2em;
+    }
+    
+    .category-item {
+        font-size: 1em;
+    }
+
+    #question {
+        font-size: 1.5em;
+    }
+    
+    .answer {
+        font-size: 1em;
+    }
+
+    #encouragement-message {
+        font-size: 1em;
+    }
+
+    #end-game-header {
+        font-size: 3em;
+    }
+
+    .game-info {
+        font-size: 1em;
+    }
+
+    #user-message {
+        font-size: 1em;
+    }
+
+    #trophy-h1 {
+        margin-bottom: 0em;
+    }
+
+    #final-score {
+        font-size: 2em;
+        margin-bottom: 0em;
+    }
+
 }
