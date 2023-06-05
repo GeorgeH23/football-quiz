@@ -212,6 +212,8 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
 }
 
 #encouragement-message {
-    font-size: 1em;
-    color: beige;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00529F;
+    margin-top: 0.5em;
 }
