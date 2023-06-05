@@ -35,17 +35,22 @@ body {
     font-size: 0.5em;
 }
 
-#start-button {
-  font-size: 1.5em;
-  padding: 0.5em 1.8em;
+#start-button, #try-again {
+  font-size: 3em;
+  padding: 0.3em 1.5em;
   border-radius: 0.2em;
   letter-spacing: 0.08em;
   background-color: #EE324E;
   font-weight: bold;
+  font-family: 'Trump Town Pro', sans-serif;
   box-shadow: 0 0.09em 0.1em rgba(59, 57, 57, 0.7);
 }
 
-#start-button:hover {
+#try-again {
+    margin-top: 2em;
+}
+
+#start-button:hover, #try-again:hover {
     background-color: #00529F;
     color: beige;
 }
@@ -216,4 +221,39 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
     font-weight: bold;
     color: #00529F;
     margin-top: 0.5em;
+}
+
+/* --------------------------------------END GAME-------------------------------------- */
+#end-game-header {
+    font-family: 'Trump Town Pro', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 7em;
+    font-weight: bold;
+    text-shadow: 0.04em 0.04em #EE324E;
+    margin-bottom: 0.5em;
+}
+
+.game-info {
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    text-shadow: 0.04em 0.04em black;
+    margin-bottom: 0.5em;
+}
+
+#user-message {
+    font-family: 'Trump Town Pro', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0.04em 0.04em #EE324E;
+    margin-bottom: 0.5em;
+}
+
+#final-score {
+    font-family: 'Trump Town Pro', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0.04em 0.04em #EE324E;
+    margin-bottom: 0.5em;
 }

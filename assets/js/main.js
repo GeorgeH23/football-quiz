@@ -613,7 +613,7 @@ function endGame() {
     scoreContainer.classList.add('hide');
     const userMessageElement = document.getElementById('user-message');
     const finalScoreElement = document.getElementById('final-score');
-    userMessageElement.textContent = `Congratulations, ${username}!`;
+    userMessageElement.textContent = `${username}`;
     finalScoreElement.textContent = `${score} out of ${selectedCategoryQuestions.length}.`;
     endGameContainer.classList.remove('hide');
   
