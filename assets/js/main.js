@@ -148,7 +148,7 @@ const quizData = [
             options:[
                "PSV Eindhoven",
                "Lazio",
-               "Villareal",
+               "Villarreal",
                "Borussia Dortmund"
             ],
             correctAnswer:"Villarreal"

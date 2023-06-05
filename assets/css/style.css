@@ -197,12 +197,12 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
 }
   
 .correct {
-    background-color: green;
+    background-color: green !important;
     color: beige;
 }
 
 .wrong {
-    background-color: #EE324E;
+    background-color: #EE324E !important;
     color: beige;
 }
 
