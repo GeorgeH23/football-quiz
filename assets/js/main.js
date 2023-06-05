@@ -9,9 +9,9 @@ const questionText = document.getElementById('question');
 const optionsContainer = document.getElementById('options');
 const nextButton = document.getElementById('next-button');
 const scoreContainer = document.getElementById('score-container');
-const scoreDisplay = document.getElementById('score');
 const encouragement = document.getElementById('encouragement-message');
 const endGameContainer = document.getElementById('end-game-container');
+const trophy = document.getElementById('trophy');
 
 let username = '';
 let currentCategoryIndex = -1; // Track the current category index
@@ -468,13 +468,6 @@ function validateUsername() {
     }
 }
 
-// Show category selection when name is submitted
-function showCategories() {
-    startButton.classList.add('hide');
-    title.classList.add('hide');
-    categoryList.classList.remove('hide');
-}
-
 // Start the quiz for the selected category
 function startQuiz(categoryIndex) {
     categoryList.classList.add('hide');
@@ -485,7 +478,7 @@ function startQuiz(categoryIndex) {
     const category = Object.assign({},quizData[currentCategoryIndex]);
     const allQuestions = category.questions;
     const shuffledQuestions = shuffleArray(allQuestions); // Shuffle the questions
-    selectedCategoryQuestions = shuffledQuestions.slice(0, 2); // Select the first four questions
+    selectedCategoryQuestions = shuffledQuestions.slice(0, 5); // Select the first four questions
     displayQuestion();
 }
 
@@ -616,6 +609,12 @@ function endGame() {
     userMessageElement.textContent = `${username}`;
     finalScoreElement.textContent = `${score} out of ${selectedCategoryQuestions.length}.`;
     endGameContainer.classList.remove('hide');
+    if(score === selectedCategoryQuestions.length) {
+        trophy.style.color = 'yellow';
+    } else if(score >= 3) {
+        console.log(score);
+        trophy.style.color = 'silver';
+    }
   
     let tryAgainButton = document.getElementById("try-again");
     tryAgainButton.addEventListener("click", () => {

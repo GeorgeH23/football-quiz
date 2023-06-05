@@ -22,13 +22,17 @@ body {
     height: 100vh;
 }
 
-#game-section-h1 {
+#game-section-h1, #trophy-h1{
     font-family: 'Trump Town Pro', sans-serif;
     letter-spacing: 0.1em;
     font-size: 10em;
     font-weight: bold;
     text-shadow: 0.04em 0.04em #EE324E;
     margin-bottom: 0.5em;
+}
+
+#trophy {
+    color: #a46628;
 }
 
 i {
