@@ -196,10 +196,21 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
     background-color: green;
     color: beige;
 }
-  
+
 .wrong {
     background-color: #EE324E;
     color: beige;
+}
+
+#options div {
+    width: 65%;
+}
+
+#question-container #options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #next-button {
@@ -255,4 +266,34 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal4 */
     font-weight: bold;
     text-shadow: 0.04em 0.04em #EE324E;
     margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1601px) {
+    #start-button, #try-again {
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #start-button, #try-again {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #game-section-h1 {
+        font-size: 6.5em;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #game-section-h1 {
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 319px) {
+    #game-section-h1 {
+        font-size: 1.8em;
+    }
+
+    #start-button, #try-again {
+        font-size: 1em;
+    }
 }
