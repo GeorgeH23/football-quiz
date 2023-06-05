@@ -11,6 +11,7 @@ const nextButton = document.getElementById('next-button');
 const scoreContainer = document.getElementById('score-container');
 const scoreDisplay = document.getElementById('score');
 const encouragement = document.getElementById('encouragement-message');
+const endGameContainer = document.getElementById('end-game-container');
 
 let username = '';
 let currentCategoryIndex = -1; // Track the current category index
@@ -605,6 +606,25 @@ function disableAnswerSelection() {
 function showScore() {
     questionContainer.classList.add('hide');
     scoreContainer.classList.remove('hide');
-    scoreDisplay.textContent = `${score} / ${selectedCategoryQuestions.length}`;
-    selectedCategoryQuestions = [];
+    endGame();
+}
+
+function endGame() {
+    scoreContainer.classList.add('hide');
+    const userMessageElement = document.getElementById('user-message');
+    const finalScoreElement = document.getElementById('final-score');
+    userMessageElement.textContent = `Congratulations, ${username}!`;
+    finalScoreElement.textContent = `${score} out of ${selectedCategoryQuestions.length}.`;
+    endGameContainer.classList.remove('hide');
+  
+    let tryAgainButton = document.getElementById("try-again");
+    tryAgainButton.addEventListener("click", () => {
+      currentQuestionIndex = 0;
+      score = 0;
+      selectedCategoryQuestions = [];
+      usernameInput.value = '';
+      endGameContainer.classList.add('hide');
+      title.classList.remove('hide');
+      startButton.classList.remove('hide');
+    });
 }
